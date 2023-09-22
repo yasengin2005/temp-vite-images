@@ -69,6 +69,13 @@ html {
     background-color 0.3s ease-in-out;
 }
 
+/* @media (prefers-color-scheme: dark) {
+  :root {
+    --textColor: var(--dark-mode-text-color);
+    --backgroundColor: var(--dark-mode-bg-color);
+  }
+} */
+
 .dark-theme {
   --textColor: var(--dark-mode-text-color);
   --backgroundColor: var(--dark-mode-bg-color);
@@ -298,16 +305,15 @@ PROJECT CSS
 Toggle Container
 ========
 */
-
 .toggle-container {
   width: var(--view-width);
   max-width: var(--max-width);
   padding: 1rem 0;
   margin: 0 auto;
+  /* border: 2px solid red; */
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
 }
-
 .dark-toggle {
   background: transparent;
   border-color: transparent;
@@ -331,7 +337,7 @@ Search Form
 }
 .search-form {
   width: var(--view-width);
-  max-width: var(--fixed-width);
+  max-width: var(--max-width);
   margin: 0 auto;
   margin-top: 2rem;
   display: grid;
@@ -343,10 +349,7 @@ Search Form
   transition: var(--darkModeTransition);
   color: var(--textColor);
   border-radius: 0;
-
-  /* border-right: none; */
 }
-
 .search-form .btn {
   border-radius: 0;
 }
@@ -360,7 +363,6 @@ Search Form
 Gallery
 ========
 */
-
 .image-container {
   width: var(--view-width);
   max-width: var(--max-width);
@@ -368,7 +370,6 @@ Gallery
   display: grid;
   gap: 2rem;
 }
-
 .image-container .img {
   height: 10rem;
 }
