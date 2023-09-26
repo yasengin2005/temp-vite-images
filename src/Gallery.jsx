@@ -14,8 +14,8 @@ const Gallery = () => {
   const response = useQuery({
     queryKey: ["images", searchTerm],
     queryFn: async () => {
-      const response = await axios.get(`${url}&query=${searchTerm}`);
-      return response.data;
+      const result = await axios.get(`${url}&query=${searchTerm}`);
+      return result.data;
     },
   });
 
