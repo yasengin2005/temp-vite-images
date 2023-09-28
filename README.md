@@ -1,4 +1,3 @@
-//visit site:
 https://resilient-nougat-489ab6.netlify.app/
 
 ## Figma URL
